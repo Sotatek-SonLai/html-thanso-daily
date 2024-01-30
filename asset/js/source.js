@@ -34,10 +34,64 @@ $sliderMobileOnly.on("afterChange", function(){
 
 
 // slide blog
-$('#slide-blog').slick({
+$('#brands').slick({
+    centerMode: true,
     centerPadding: '60px',
-    slidesToShow: 4,
-    dots: true
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    autoplay:true,
+    autoplaySpeed: 3000,
+    infinite: true,
+    dots: true,
+    arrows: false
+});
+// slide blog
+$('#brands-mobile').slick({
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    autoplay:true,
+    autoplaySpeed: 3000,
+    infinite: true,
+    dots: true,
+    arrows: false
+});
+$('#fb-kh').slick({
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToScroll: 3,
+    slidesToShow: 3,
+    autoplay:true,
+    autoplaySpeed: 3000,
+    infinite: true,
+    dots: true,
+    arrows: false,
+
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                arrows: false,
+                centerMode: true,
+
+                centerPadding:'0px',
+                // centerPadding: '40px',
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                arrows: true,
+                centerMode: true,
+
+                centerPadding:'0px',
+                // centerPadding: '40px',
+                slidesToShow: 1
+            }
+        }
+    ]
 });
 
 

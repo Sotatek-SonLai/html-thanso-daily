@@ -27,6 +27,35 @@
 @media (max-width: 768px) {
     *{}
 
+    .coach-thanso .ct h5 {
+        font-size: 25px;
+    }
+
+    .coach-thanso .link {
+        min-width: 90%;
+    }
+
+    .coach-thanso {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .coach-thanso .ct {
+        padding: 20px;
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    .base-value-box .title {
+        padding: 0;
+    }
+
+    .index-thanso .ct h5 {
+    }
+
     .lst-index {
         gap: 20px;
     }
@@ -36,7 +65,19 @@
     }
 
     #tra-cuu {
-        margin-top: 10px !important;
+        margin-top: 50px !important;
+        gap: 60px;
+    }
+
+    div#tra-cuu .h5 {width: 100%;justify-content: center;font-size: 30px;
+        flex-wrap: wrap;
+        line-height: 51px;
+    }
+
+    div#tra-cuu h5 {
+        text-align: center !important;
+        width: 100%;
+        display: flex;
     }
     .blog-item-slide .img {
         width: 100%;
@@ -112,11 +153,62 @@
     .box-payment, .box-mess {
         margin-top: 50px;
     }
+    .title-1 {
+        font-size: 24px;
+    }
+
+    .title-2 {
+        font-size: 28px;
+    }
+
+    .slick-next {
+        right: 0;
+    }
+
+    .navbar-toggler {
+        background: none;
+        border: none;
+    }
 }
 
 /*mobile*/
 @media(max-width: 575px){
     *{}
+
+    .coach-thanso .img {
+        position: relative;
+        width: 180px;
+        height: 180px;
+        top: 0;
+        left: 0;
+    }
+
+    .brands {
+    }
+
+    .index-thanso .ct p {
+        text-align: justify;
+    }
+
+    .index-thanso {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .index-thanso .ct {
+        text-align: center;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lst-dk {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .dk-item {width: 100%;}
 
     .img-coach img {
         width: 300px;
@@ -289,6 +381,9 @@
     .i-index .value {
         font-weight: bold !important;
         font-size: 20px !important;
+    }
+    .slick-prev:before, .slick-next:before {
+        font-size: 26px !important;
     }
 }
 
